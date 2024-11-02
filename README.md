@@ -96,12 +96,12 @@ python scripts/bigquery_table_extractor.py config/sample_config_extractor.yaml
 
 The data will be saved in the `output/` directory in the format specified in the configuration file (CSV, Excel, or Parquet).
 
-## Automation Scripts
+## Sample Workflow
 
-- **sample_execute_pipeline.bash**: Bash script to run the entire pipeline on Unix-based systems.
+- **sample_execute_pipeline.bash**: Bash script to run the pipeline on Unix-based systems.
 - **sample_execute_pipeline.bat**: Batch script to run the pipeline on Windows.
 
-These scripts automate ingestion, query execution, and extraction in sequence.
+These scripts show how to automate ingestion, query execution, and extraction in sequence - a pipeline if you will.
 
 ## Example Workflow
 
