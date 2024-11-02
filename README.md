@@ -3,7 +3,8 @@
 
 ## Overview
 
-The **BigQuery Local Framework** is a Python-based toolkit for managing data workflows in Google BigQuery. It includes scripts to automate data ingestion, query execution, and data extraction, making it easier to handle common tasks. Each script is customizable via YAML configuration files, providing flexibility for various data workflows.
+The **BigQuery Local Framework** is a Python-based toolkit for managing data workflows in Google BigQuery - locally. It includes scripts to automate data ingestion, query execution, and data extraction, making it easier to handle common tasks. Each script is customizable via YAML configuration files, providing flexibility for various data workflows.
+This is a great tool for data people that don't have total access to all resources of GCP, or people looking for fast prototyping (which was my case).
 
 ## Features
 
