@@ -1,0 +1,12 @@
+project_param:
+  output_foldername: "output"
+
+bq_param:
+  project_id: "placeholder_project_id"
+  dataset: "placeholder_dataset"
+  tablename: "placeholder_tablename"
+
+file_param:
+  file_radcname: "outgoing_filename"
+  file_ext: ".csv"  # Supported values: .csv, .xlsx, .parquet
+  sheet_name: ""  # Required for .xlsx files; can be omitted for .csv and .parquet files

@@ -1,0 +1,4 @@
+bq_param:
+  project_id: "placeholder_project_id"  # Google Cloud project ID
+  dataset: "placeholder_dataset"        # BigQuery dataset name
+  tablename: "placeholder_tablename"     # BigQuery table name
