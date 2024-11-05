@@ -1,0 +1,7 @@
+project_param:
+  output_foldername: "output"
+
+file_param:
+  file_radcname: "sample_query_export"
+  file_ext: ".xlsx"  # Supported values: .csv, .xlsx, .parquet
+  sheet_name: "sample_query_export"  # Required for .xlsx files; can be omitted for .csv and .parquet files
