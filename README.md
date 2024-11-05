@@ -18,26 +18,29 @@ This is a great tool for data people that don't have total access to all resourc
 bigquery-local-framework/
 │
 ├── config/
-│   ├── sample_config_extractor.yaml      # Configuration for data extraction
-│   ├── sample_config_ingest.yaml         # Configuration for data ingestion
-│   └── sample_config_query.yaml          # Configuration for query execution
+│   ├── sample_config_query_extractor.yaml      # Configuration for query extraction
+│   ├── sample_config_table_extractor.yaml      # Configuration for table extraction
+│   ├── sample_config_ingest.yaml               # Configuration for data ingestion
+│   └── sample_config_query.yaml                # Configuration for query execution
 │
 ├── input/
-│   └── incoming_excel_filename.xlsx      # Sample input file for ingestion
+│   └── incoming_excel_filename.xlsx            # Sample input file for ingestion
 │
 ├── output/
-│   └── outgoing_filename.csv             # Sample output file for data extraction
+│   ├── sample_query_export.csv                 # Sample output file for query extraction
+│   └── sample_table_export.csv                 # Sample output file for table extraction
 │
 ├── queries/
-│   └── sample_query.sql                  # Sample SQL query for BigQuery
+│   └── sample_query.sql                        # Sample SQL query for BigQuery
 │
 ├── scripts/
-│   ├── bigquery_ingest_excel.py          # Script to ingest Excel files into BigQuery
-│   ├── bigquery_query_trigger.py         # Script to execute SQL queries in BigQuery
-│   └── bigquery_table_extractor.py       # Script to extract table data from BigQuery
+│   ├── bigquery_ingest_excel.py                # Script to ingest Excel files into BigQuery
+│   ├── bigquery_query_trigger.py               # Script to execute SQL queries in BigQuery
+│   ├── bigquery_query_extractor.py             # Script to extract query data from BigQuery
+│   └── bigquery_table_extractor.py             # Script to extract table data from BigQuery
 │
-├── sample_execute_pipeline.bash          # Bash script to run the full pipeline
-├── sample_execute_pipeline.bat           # Batch script to run the full pipeline on Windows
+├── sample_run_pipeline.bash                # Bash script to run the full pipeline
+├── sample_run_pipeline.bat                 # Batch script to run the full pipeline on Windows
 ├── LICENSE
 └── README.md
 ```
@@ -98,8 +101,8 @@ The data will be saved in the `output/` directory in the format specified in the
 
 ## Sample Workflow
 
-- **sample_execute_pipeline.bash**: Bash script to run the pipeline on Unix-based systems.
-- **sample_execute_pipeline.bat**: Batch script to run the pipeline on Windows.
+- **sample_run_pipeline.bash**: Bash script to run the pipeline on Unix-based systems.
+- **sample_run_pipeline.bat**: Batch script to run the pipeline on Windows.
 
 These scripts show how to automate ingestion, query execution, and extraction in sequence - a pipeline if you will.
 
