@@ -7,6 +7,6 @@ bq_param:
   tablename: "placeholder_tablename"
 
 file_param:
-  file_radcname: "outgoing_filename"
+  file_radcname: "sample_table_export"
   file_ext: ".csv"  # Supported values: .csv, .xlsx, .parquet
   sheet_name: ""  # Required for .xlsx files; can be omitted for .csv and .parquet files
