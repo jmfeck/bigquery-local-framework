@@ -10,8 +10,9 @@ This is a great tool for data people that don't have total access to all resourc
 
 - **Ingest Excel Files**: Load data from Excel files into BigQuery.
 - **Execute SQL Queries**: Run SQL queries stored in files directly within BigQuery.
-- **Extract Table Data**: Export data from BigQuery to local files in formats such as CSV, Excel, and Parquet.
-
+- **Extract Table Data**: Export data from a BigQuery table or view to a local file in formats such as CSV, Excel, and Parquet.
+- **Extract Query Data**: Export data from a BigQuery query results to a local file in formats such as CSV, Excel, and Parquet.
+- 
 ## Project Structure
 
 ```plaintext
@@ -91,10 +92,24 @@ This will execute the specified SQL query within BigQuery.
 
 ### 3. Extract Table Data from BigQuery
 
-To export data from BigQuery to a local file:
+The is two ways to extract data from BigQuery.
+
+#### 3.1 Extract Table/View Data
+
+To export table/view from BigQuery to a local file:
 
 ```bash
-python scripts/bigquery_table_extractor.py config/sample_config_extractor.yaml
+python scripts/bigquery_table_extractor.py config/sample_config_table_extractor.yaml
+```
+
+The data will be saved in the `output/` directory in the format specified in the configuration file (CSV, Excel, or Parquet).
+
+#### 3.2 Extract Query Results
+
+To export query results from BigQuery to a local file:
+
+```bash
+python scripts/bigquery_query_extractor.py config/sample_config_query_extractor.yaml sample_query.sql
 ```
 
 The data will be saved in the `output/` directory in the format specified in the configuration file (CSV, Excel, or Parquet).
