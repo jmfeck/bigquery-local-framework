@@ -12,7 +12,7 @@ This is a great tool for data people that don't have total access to all resourc
 - **Execute SQL Queries**: Run SQL queries stored in files directly within BigQuery.
 - **Extract Table Data**: Export data from a BigQuery table or view to a local file in formats such as CSV, Excel, and Parquet.
 - **Extract Query Data**: Export data from a BigQuery query results to a local file in formats such as CSV, Excel, and Parquet.
-- 
+ 
 ## Project Structure
 
 ```plaintext
@@ -109,7 +109,7 @@ The data will be saved in the `output/` directory in the format specified in the
 To export query results from BigQuery to a local file:
 
 ```bash
-python scripts/bigquery_query_extractor.py config/sample_config_query_extractor.yaml sample_query.sql
+python scripts/bigquery_query_extractor.py config/sample_config_query_extractor.yaml queries/sample_query.sql
 ```
 
 The data will be saved in the `output/` directory in the format specified in the configuration file (CSV, Excel, or Parquet).
