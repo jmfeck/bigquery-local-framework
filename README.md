@@ -85,7 +85,7 @@ This script reads an Excel file from the `input/` directory and loads it into th
 To run a SQL query from the `queries/` directory:
 
 ```bash
-python scripts/bigquery_query_trigger.py config/sample_config_query.yaml queries/sample_query.sql
+python scripts/bigquery_query_trigger.py config/sample_config_query_trigger.yaml queries/sample_query.sql
 ```
 
 This will execute the specified SQL query within BigQuery.

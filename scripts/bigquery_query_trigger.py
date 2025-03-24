@@ -47,9 +47,6 @@ def get_config_item(dict_item, var):
 ###############################################################################################################
 # BigQuery connection
 project_id = get_config_item('bq_param', 'project_id')
-dataset = get_config_item('bq_param', 'dataset')
-tablename = get_config_item('bq_param', 'tablename')
-table_id = f"{project_id}.{dataset}.{tablename}"
 
 path_script = os.path.realpath(__file__)
 path_project = os.path.dirname(os.path.dirname(path_script))
