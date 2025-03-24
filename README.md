@@ -22,7 +22,7 @@ bigquery-local-framework/
 │   ├── sample_config_query_extractor.yaml      # Configuration for query extraction
 │   ├── sample_config_table_extractor.yaml      # Configuration for table extraction
 │   ├── sample_config_ingest.yaml               # Configuration for data ingestion
-│   └── sample_config_query.yaml                # Configuration for query execution
+│   └── sample_config_query_trigger.yaml                # Configuration for query execution
 │
 ├── input/
 │   └── incoming_excel_filename.xlsx            # Sample input file for ingestion
@@ -50,7 +50,7 @@ bigquery-local-framework/
 
 ### Prerequisites
 
-- **Python 3.x**
+- **Python 3.9**
 - **Google Cloud SDK** with BigQuery API enabled
 - Required Python packages (install with `requirements.txt`):
 
@@ -63,8 +63,9 @@ pip install -r requirements.txt
 Configuration files for each task are located in the `config/` directory. Each YAML file contains settings specific to the task:
 
 - **sample_config_ingest.yaml**: Config for ingesting Excel files.
-- **sample_config_query.yaml**: Config for executing queries.
-- **sample_config_extractor.yaml**: Config for extracting data.
+- **sample_config_query_trigger.yaml**: Config for executing queries.
+- **sample_config_table_extractor.yaml**: Config for extracting complete data from view/table.
+- **sample_config_query_extractor.yaml**: Config for extracting results from query.
 
 Customize these files with your project settings.
 
